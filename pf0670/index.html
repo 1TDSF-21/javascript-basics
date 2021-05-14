@@ -4,43 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="" type="text/css">
+    <link rel="stylesheet" href="./css/estilo.css" type="text/css">
     <title>VIEW</title>
-    <style>
-        /*
-        ...
-        */
-    </style>
-
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <div id="container">
 
         <div>
-            <p>Player 1</p>
+            <p>Player 1 : </p>
         </div>
 
     </div>
 
-    <script>
-        //Comentário de Linhas
-        /*
-        ...Comentário de Bloco
-        */
 
-        //Pegando um seletor genérico
-        const p1 = document.querySelector('p');
-
-        //Escutando um Evento
-        p1.addEventListener('click', atualizador);
-
-        //Função que será executada caso o EventListener escute algo
-        function atualizador() {
-            let nome = prompt('Digite o novo nome!');
-            p1.textContent = 'Player 1 ' + nome;
-        }
-    </script>
 </body>
 
 </html>
