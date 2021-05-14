@@ -70,16 +70,20 @@
         */
 
         //Pegando um seletor genérico
-        const p1 = document.querySelector('p');
+        //const p1 = document.querySelector('p');
+        const p1 = document.querySelector('#nomePlayer');
         window.name = "EXEMPLO";
-
         p1.textContent = window.navigator.userAgent;
-
         //Escutando um Evento
         p1.addEventListener('click', atualizador);
-
         //Função que será executada caso o EventListener escute algo
         function atualizador() {
             let nome = prompt('Digite o novo nome!');
             p1.textContent = 'Player 1 ' + nome;
         }
+
+        //Manipulando a div através de querySelector com css.
+        const divPlayer = document.querySelector('.espaco'); 
+        divPlayer.style.backgroundColor = '#ff0000';
+        divPlayer.style.heigth = '100vw';
+        divPlayer.style.borderRadius = '20px'
