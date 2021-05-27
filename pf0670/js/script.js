@@ -1,3 +1,44 @@
+//20/05/2021
+//Objetos
+let pessoa = {
+    nome: "Ale",
+    dtNasc: "26/12/1975",
+    profissao:  "Professor",
+    genero: "m",
+
+    getNome: function(){
+        return this.nome;
+    },
+    getDtNasc: function(){
+        return this.dtNasc;
+    },
+    getProfissao: function(){
+        return this.profissao;
+    },
+    getGenero: function(){
+        return this.genero;
+    },
+    setNome: function(nome){
+        this.nome = nome;
+    }
+
+} 
+pessoa.setNome('Leandrinho');
+console.log(pessoa.nome);
+
+const p1 = document.getElementById('nomePlayer');
+//p1.innerHTML = 'Player 1 : ' + prompt("Digite o novo nome!");
+p1.addEventListener('click',criaElemento);
+
+function criaElemento(){
+    let nomeElemento = prompt("Digite o elemento a ser criado(Apenas a tag sem os simbolos Ex : p)");
+    const novoElemento = document.createElement(nomeElemento);
+    novoElemento.textContent = "Novo Elemento criado";
+    document.body.appendChild(novoElemento);
+}
+
+
+/*
 //DECLARAÇÃO DE VARIÁVEIS E CONSTANTES
         //Diferença entre var/let/const
 
@@ -65,9 +106,9 @@
 
 
         //Comentário de Linhas
-        /*
+  
         ...Comentário de Bloco
-        */
+  
 
         //Pegando um seletor genérico
         //const p1 = document.querySelector('p');
@@ -87,3 +128,4 @@
         divPlayer.style.backgroundColor = '#ff0000';
         divPlayer.style.heigth = '100vw';
         divPlayer.style.borderRadius = '20px'
+*/
